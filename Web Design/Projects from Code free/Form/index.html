@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+
+    <h1 id="title">Contact Form</h1>
+
+</header>
+
+<section>
+
+    <!--Start of Form  -->
+    <form id="survey-form" action="">
+        <p id="description"> How can we help you build the website of your dreams?</p>
+
+        <!-- Text input part -->
+        <div id="textinput">
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" name="name" required><br>
+
+
+            <label id="email-label" for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+
+            <label for="pnumber">Phone Number:</label>
+            <input type="tel" id="pnumber" name="pnumber"><br>
+
+        </div>
+        <!-- Radio Buttons -->
+
+        <div id="background">
+
+            <label for="background">Your Background</label>
+            <fieldset>
+
+                <input type="radio" name="background" value="Entrepreneur" checked>Entrepreneur<br>
+                <input type="radio" name="background" value="Student">Student<br>
+                <input type="radio" name="background" value="Company Employee">Company Employee<br>
+                <input type="radio" name="background" value="Governamental Entity">Governamental Entity<br>
+                <input type="radio" name="background" value="Nonprofit Organization">Nonprofit Organization<br>
+        </div>
+
+
+        </fieldset>
+        <!-- Dropdown section -->
+
+        <div>
+            <label for="dropdown"> Type of Website:</label>
+
+            <select id="dropdown" name="type_website">
+                <option value="business">Business</option>
+                <option value="blog">Personal Blog</option>
+                <option value="product">Product</option>
+                <option value="ecommerce">Ecommerce</option>
+                <option value="gallery">Photo Gallery</option>
+                <option value="form">Form</option>
+                <option value="game">Game</option>
+
+            </select>
+
+            <!-- Webpages required -->
+
+            <div>
+                <label for="number-label">Number of Webpages:</label>
+                <input type="number" id="number-label" name="pages" min="1" max="10" required>
+
+            </div>
+            <!-- Type of Webpages to design -->
+
+            <div id="type_pages">
+                <label for=type_pages>Type of Pages</label>
+
+                <fieldset>
+                    <input type="checkbox" name="type_pages" value="LandPage" checked>Landing Page<br>
+                    <input type="checkbox" name="type_pages" value="LandPage">Contacts<br>
+                    <input type="checkbox" name="type_pages" value="LandPage">Personal Page<br>
+                    <input type="checkbox" name="type_pages" value="LandPage">Product Page<br>
+                    <input type="checkbox" name="type_pages" value="LandPage">Catalog<br>
+                    <input type="checkbox" name="type_pages" value="LandPage">Others<br>
+
+                </fieldset>
+
+                <!-- free text box -->
+
+                <div>
+
+                    <label for="freetext">Please describe your overall request:</label>
+                    <textarea id="freetext" form="survey-form" cols="25" rows="10"
+                        placeholder="Enter your requirements here" required></textarea>
+
+                    
+                        <br><br><input id="submit" type="submit" name="submit">
+    </form>
+   
+</section>
+
+</html>

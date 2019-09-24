@@ -1,0 +1,65 @@
+header {
+    text-align: center; 
+    
+}
+
+body {
+    font-family: "Comic Sans", Helvetica;
+    text-align: center;
+    color: white;
+    background-color: #EBA51E;
+}
+
+form {
+    color: white;
+    border-color: #F5EFE3;
+    border-style: solid;
+    background-color: #575550;
+    padding: 20px 20px;
+    margin: 10px 400px;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    
+}
+
+input{
+    margin: 5px;
+    
+}
+
+input[type=radio],input[type=checkbox]{
+    
+    margin: 5px;
+}
+
+div{
+    margin: 10px;
+  
+    
+    
+
+}
+
+
+
+fieldset ,textarea {
+    border: 0;
+    display:inline;
+    vertical-align: middle;
+   
+}
+
+label {
+    color: #EBA51E;
+    display:inline-block;
+
+    
+  
+   
+
+}
+

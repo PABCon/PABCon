@@ -1,0 +1,42 @@
+* head{margin 0;
+padding:0;}
+#main {
+    background-color: #70a6a6;
+    text-align: center;
+    font-family: "Courier New", Helvetica;
+    font-size: 20px;
+  }
+  header {
+    font-size: 20px;
+  }
+  
+  #title {
+    font-size: 40px;
+  }
+  
+  #img-div {
+    background-color: #b7d8d8;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  #tribute-info {
+    list-style-type: none;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+  
+  li {
+    margin: 20px;
+  }
+  
+  #quote {
+    margin: 100px;
+    border: black solid;
+    padding: 20px;
+  }
+  
+  
