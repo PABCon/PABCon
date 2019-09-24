@@ -1,0 +1,38 @@
+/* Work in progress */
+*{
+    margin:0;
+    padding: 0;
+}
+nav{
+    
+    display:flex;
+    background-color: black;
+    flex-basis: auto;
+    align-self: baseline;
+    justify-content: space-between;
+    
+
+
+}
+
+#header-img{
+        overflow: hidden;
+        padding: 0;
+        width: 100%;
+}
+
+li{
+display: inline-block;
+color: white;
+margin: 20px;
+list-style: none;
+
+}
+
+a{
+    color:white;
+    font-size:1rem;
+
+    text-emphasis: none;
+text-decoration: inherit;
+}
