@@ -1,0 +1,5 @@
+This HTML and CSS files were created in order to reproduce and meet all the stories mention on the link below.
+
+This is a task from Free Code Camp
+
+https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page
