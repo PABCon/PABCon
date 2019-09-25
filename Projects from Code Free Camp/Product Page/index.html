@@ -10,81 +10,146 @@
 </head>
 
 <!-- Header part -->
-<header id="header">
 
-    <nav>
-        <div class="nav-link">
-            <a href="https://www.ibanez.com/eu/"><img src="https://www.ibanez.com/images/logo.png" alt="Ibanez Logo"
-                    id="header-img"></a>
-        </div>
-
-        <ul>
-            <li class="nav-item"><a href="">Features</a></li>
-            <li class="nav-item"><a href="">Video</a></li>
-            <li class="nav-item"><a href="">Prices</a></li>
-
-        </ul>
-    </nav>
-
-</header>
 
 
 <body>
-    <!-- First DIV for form -->
-    <div id="body-first-div">
-        <h2>Ibanez Guitars</h2>
-        <form>
-            <input type="mail" name="" id="mail" style="width: 15%;" placeholder="Enter Your Email"><br>
-            <input id="submit" onclick="www.freecodecamp.com/email-submit" type="submit"  value="Get Started" id="submit">
-        </form>
-    </div>
-    <!-- Feature DIV-->
-    <div class="feature">
+    <div class="pagewrapper">
+        <header id="header">
 
-        <div>
-            <a href="https://icons8.com/icon/64935/saw"><img src="https://img.icons8.com/cotton/64/000000/saw.png"></a>
-            <div>
-                <h3>Quality Material</h3>
-                <p>You can be sure that we build our products with the best materials and the most advanced technology
-                    processes!</p>
-            </div>
+            <nav>
+                <div class="nav-link">
+                    <a href="https://www.ibanez.com/eu/"><img src="https://www.ibanez.com/images/logo.png"
+                            alt="Ibanez Logo" id="header-img"></a>
+                </div>
+
+                <ul>
+                    <li class="nav-item"><a href="#header">Features</a></li>
+                    <li class="nav-item"><a href="#video">Video</a></li>
+                    <li class="nav-item"><a href="#price">Prices</a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+
+        <section id="hero">
+
+            <h2>Ibanez Guitars</h2>
+            <form>
+                <input type="mail" name="" id="mail" placeholder="Enter Your Email" required><br>
+                <input id="submit" onclick="www.freecodecamp.com/email-submit" type="submit" value="Get Started"
+                    id="submit">
+            </form>
+
+        </section>
+        <!-- Feature DIV-->
+        <div class="container">
+
+            <section id="features">
+                <div class="grid">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/cotton/64/000000/saw.png"></a>
+                    </div>
+
+                    <div class="description">
+                        <h3>Quality Material</h3>
+                        <p>You can be sure that we build our products with the best materials and the most advanced
+                            technology processes!</p>
+                    </div>
+
+                </div>
+
+
+                <div class="grid">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/cotton/64/000000/cardboard-box.png"></a>
+                    </div>
+                    <div class="descrition">
+                        <h3>Delivery</h3>
+                        <p>With our easy and fast delivery systems, you can be sure to get your product very quickly!
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="grid">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/dusk/64/000000/safe.png"></a>
+                    </div>
+                    <div class="description">
+                        <h3>Safety</h3>
+                        <p>We ensure that your product is damage free during all process!</p>
+                    </div>
+                </div>
+
+            </section>
+            <section id="video">
+                <!-- Video DIV-->
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LcDhdxmLNdk" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </section>
+
+            <!-- Prices DIV-->
+            <section id="price">
+                <div class="price">
+                    <div class="pricebox">
+                        <div class="guitar_name">
+                            <h3>Ibanez Thunder</h3>
+                        </div>
+                        <div class="guitar-desc">
+                            <h2>500$</h2>
+                            <p>This is good guitar</p>
+                        </div>
+                        <div class="select-button">
+                            <input id="submit" type="submit" value="Select">
+                        </div>
+
+
+                    </div>
+                    <div class="pricebox">
+                        <div class="guitar_name">
+                            <h3>Ibanez Tornado</h3>
+                        </div>
+                        <div class="guitar-desc">
+                            <h2>1000$</h2>
+                            <p>This is a very good guitar</p>
+                        </div>
+                        <div class="select-button">
+                            <input id="submit" type="submit" value="Select">
+                        </div>
+
+
+                    </div>
+
+                    <div class="pricebox">
+                        <div class="guitar_name">
+                            <h3>Ibanez Hurricane</h3>
+                        </div>
+                        <div class="guitar-desc">
+                            <h2>1500$</h2>
+                            <p>This is a fantastic guitar</p>
+                        </div>
+                        <div class="select-button">
+                            <input id="submit" type="submit" value="Select">
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
         </div>
-
-        <div>
-            <a href="https://icons8.com/icon/97509/cardboard-box"><img
-                    src="https://img.icons8.com/cotton/64/000000/cardboard-box.png"></a>
-            <div>
-                <h3>Delivery</h3>
-                <p>With our easy and fast delivery systems, you can be sure to get your product very quickly!</p>
-            </div>
-        </div>
-
-        <div>
-            <a href="https://icons8.com/icon/49308/safe"><img src="https://img.icons8.com/dusk/64/000000/safe.png"></a>
-            <div>
-                <h3>Safety</h3>
-                <p>We ensure that your product is damage free during all process!</p>
-            </div>
-        </div>
-
-    </div>
-    <!-- Video DIV-->
-    <div class="video">
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/LcDhdxmLNdk" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </div>
-
-    <!-- Prices DIV-->
-    <div class="Prices">
-
-    </div>
 
 </body>
 
 <footer>
     <!-- Footer links -->
-    <div id="footer"> 
+    <div id="footer">
         <ul id="footer-links">
             <li class="footer-item"><a class="footer-link" href="">Privacy</a></li>
             <li class="footer-item"><a class="footer-link" href="">Terms</a></li>
