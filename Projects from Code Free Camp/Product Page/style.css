@@ -95,25 +95,34 @@ h2 {
 
 }
 
-section{display: block;
+section{display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 100px;
+    
 }
 
 .grid{
     display: flex;
+    width: 50%;
     margin: 50px;
-    justify-content: baseline;
+    
+
+    
 
 }
 .icon, .guitar-desc{
+   
     
     margin: 0px 20px;
 }
 #features{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;}
+    
+    
+   
+
+
+    }
 
 
 /* #features .icon{
