@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documentation page </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<nav id="">
+    <h2>TABLES IN HTML</h2>
+    <div>
+        <ul class="nav-list">
+
+            <li><a href="#What is a Table"> What is a table?</a></li>
+            <li><a href="#"> Creating your first table</a></li>
+            <li><a href="#"> Adding headers with &lt;tr&gt; elements</a></li>
+            <li><a href="#"> Providing common styling to columns</a></li>
+            <li><a href="#"> Exercise</a></li>
+            <li><a href="#"> Reference</a></li>
+        </ul>
+
+
+    </div>
+</nav>
+
+
+
+
+<body>
+
+    <main id="main-doc">
+
+        <section class="main-section">
+            <div></div>
+        </section>
+        <section class="main-section">
+            <div id="what is a table?">
+                <h2>What is a table?</h2>
+                <p>A table is a structured set of data made up of rows and columns <strong>(tabular data)</strong>. A
+                    table allows you to quickly and easily look up values that indicate some kind of connection between
+                    different types of data, for example a person and their age, or a day of the week, or the timetable
+                    for a local swimming pool.</p>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <div>
+                <h2>Creating your first table</h2>
+                <p>We've talked table theory enough, so, let's dive into a practical example and build up a simple
+                    table.</p>
+                <ol>
+                    <li>First of all, make a local copy of blank-template.html and minimal-table.css in a new directory
+                        on your local machine.</li>
+                    <li>The content of every table is enclosed by these two tags:
+                        <code>&lt;table&gt;&lt;/table&gt;</code>. Add these inside the body of your HTML.</li>
+                    <li>The smallest container inside a table is a table cell, which is created by a <td> element ('td'
+                            stands for 'table data'). Add the following inside your table tags:
+                            <code>&lt;td&gt;Hi, I'm your first cell.&lt;/td&gt;</code>
+                    </li>
+                    <p>As you will see, the cells are not placed underneath each other, rather they are automatically
+                        aligned with each other on the same row. Each <td> element creates a single cell and together
+                            they make up the first row. Every cell we add makes the row grow longer.
+
+                            To stop this row from growing and start placing subsequent cells on a second row, we need to
+                            use the <code>&lt;tr&gt;</code> element ('tr' stands for 'table row'). Let's investigate
+                            this now.
+                    </p>
+
+                </ol>
+            </div>
+
+        </section>
+        <section class="main-section">
+            <div>
+
+                <h2>Adding headers with &lt;tr&gt; elements</h2>
+                <p>Now let's turn our attention to table headers — special cells that go at the start of a row or column
+                    and define the type of data that row or column contains (as an example, see the "Person" and "Age"
+                    cells in the first example shown in this article). To illustrate why they are useful, have a look at
+                    the following table example. First the source code:</p>
+                <code><xmp>
+                    <table>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td>Knocky</td>
+                          <td>Flor</td>
+                          <td>Ella</td>
+                          <td>Juan</td>
+                        </tr>
+                        <tr>
+                          <td>Breed</td>
+                          <td>Jack Russell</td>
+                          <td>Poodle</td>
+                          <td>Streetdog</td>
+                          <td>Cocker Spaniel</td>
+                        </tr>
+                        <tr>
+                          <td>Age</td>
+                          <td>16</td>
+                          <td>9</td>
+                          <td>10</td>
+                          <td>5</td>
+                        </tr>
+                        <tr>
+                          <td>Owner</td>
+                          <td>Mother-in-law</td>
+                          <td>Me</td>
+                          <td>Me</td>
+                          <td>Sister-in-law</td>
+                        </tr>
+                        <tr>
+                          <td>Eating Habits</td>
+                          <td>Eats everyone's leftovers</td>
+                          <td>Nibbles at food</td>
+                          <td>Hearty eater</td>
+                          <td>Will eat till he explodes</td>
+                        </tr>
+                      </table></xmp></code>
+
+                <p>Now the actual rendered table:</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Knocky</td>
+                            <td>Flor</td>
+                            <td>Ella</td>
+                            <td>Juan</td>
+                        </tr>
+                        <tr>
+                            <td>Breed</td>
+                            <td>Jack Russell</td>
+                            <td>Poodle</td>
+                            <td>Streetdog</td>
+                            <td>Cocker Spaniel</td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td>16</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Owner</td>
+                            <td>Mother-in-law</td>
+                            <td>Me</td>
+                            <td>Me</td>
+                            <td>Sister-in-law</td>
+                        </tr>
+                        <tr>
+                            <td>Eating Habits</td>
+                            <td>Eats everyone's leftovers</td>
+                            <td>Nibbles at food</td>
+                            <td>Hearty eater</td>
+                            <td>Will eat till he explodes</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="main-section">
+            <div>
+                <h2>Providing common styling to columns</h2>
+
+                <p>There is one last feature we'll tell you about in this article before we move on.
+                    HTML has a method of defining styling information for an entire column of data all in one place —
+                    the <code>&lt;col&gt;</code> and <code>&lt;colgroup&gt;</code> elements.
+                    These exist because it can be a bit annoying and inefficient having to specify styling on columns —
+                    you generally have to specify your styling information on every <code>&lt;td&gt;</code> or
+                    <code>&lt;th&gt;</code> in the column, or use a complex selector such as <code>:nth-child().</code>
+
+
+                    <br>Take the following simple example:</p>
+
+                <code><xmp>
+                            <table>
+                                <tr>
+                                  <th>Data 1</th>
+                                  <th style="background-color: yellow">Data 2</th>
+                                </tr>
+                                <tr>
+                                  <td>Calcutta</td>
+                                  <td style="background-color: yellow">Orange</td>
+                                </tr>
+                                <tr>
+                                  <td>Robots</td>
+                                  <td style="background-color: yellow">Jazz</td>
+                                </tr>
+                              </table></xmp></code>
+
+                <p>Which gives us the following result:</p>
+
+                <table>
+                    <tr>
+                        <th>Data 1</th>
+                        <th style="background-color: yellow">Data 2</th>
+                    </tr>
+                    <tr>
+                        <td>Calcutta</td>
+                        <td style="background-color: yellow">Orange</td>
+                    </tr>
+                    <tr>
+                        <td>Robots</td>
+                        <td style="background-color: yellow">Jazz</td>
+                    </tr>
+                </table>
+
+
+
+            </div>
+
+        </section>
+        <section class="main-section">
+            <div>
+                <h2>Exercise</h2>
+                <p>Recreate the table by following the steps below.</p>
+                <ol>
+                    <li>First, make a local copy of our <code>timetable.html</code> file in a new directory on your
+                        local machine. The HTML contains the same table you saw above, minus the column styling
+                        information.</li>
+                    <li>Add a <code>&lt;colgroup&gt;</code> element at the top of the table, just underneath the
+                        <code>&lt;table&gt;</code> tag, in which you can add your <code>&lt;col&gt;</code> elements (see
+                        the remaining steps below).</li>
+                    <li>The first two columns need to be left unstyled.</li>
+                    <li>Add a background color to the third column. The value for your style attribute is
+                        <code>background-color:#97DB9A;</code></li>
+                    <li>Set a separate width on the fourth column. The value for your <code>style</code> attribute is
+                        <code>width: 42px;</code></li>
+                    <li>Add a background color to the fifth column. The value for your style attribute is
+                        <code>background-color: #97DB9A;</code></li>
+                    <li>Add a different background color plus a border to the sixth column, to signify that this is a
+                        special day and she's teaching a new class. The values for your style attribute are
+                        <code>background-color:#DCC48E; border:4px solid #C1437A;</code></li>
+                    <li>The last two days are free days, so just set them to no background color but a set width; the
+                        value for the <code>style</code> attribute is <code>width: 42px;</code></li>
+
+                </ol>
+
+
+            </div>
+        </section>
+        <section class="main-section">
+
+            <div>
+                <h2>Reference</h2>
+
+                <p>All the documentation in this page was taken from <a
+                        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics">MDM web Docs</a></p>
+            </div>
+        </section>
+
+
+
+    </main>
+
+</body>
+
+</html>

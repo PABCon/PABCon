@@ -112,7 +112,6 @@ section{display: flex;
 
 }
 .icon, .guitar-desc{
-   
     
     margin: 0px 20px;
 }
@@ -121,7 +120,7 @@ section{display: flex;
 #video{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 200px;
     
 }
 
