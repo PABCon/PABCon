@@ -95,8 +95,6 @@ section {
     grid-template-columns: 50% 50%;
 }
 
-#portfolio>div {}
-
 #portfolio>div>p {
     color: #68A098;
 }
@@ -160,4 +158,20 @@ footer>div {
 
 footer>div>p {
     font-size: 15px;
+}
+
+#button {
+    margin: 50px 0;
+}
+
+button {
+    background-color: #68A098;
+    border: none;
+    padding: 10px;
+}
+
+button>a {
+    text-emphasis: none;
+    text-decoration: none;
+    font-size: 1rem;
 }
