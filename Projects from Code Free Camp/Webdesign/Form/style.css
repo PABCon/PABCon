@@ -1,6 +1,5 @@
 header {
-    text-align: center; 
-    
+    text-align: center;
 }
 
 body {
@@ -16,50 +15,45 @@ form {
     border-style: solid;
     background-color: #575550;
     padding: 20px 20px;
-    margin: 10px 400px;
     box-sizing: border-box;
     text-align: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: auto;
-    
 }
 
-input{
-    margin: 5px;
-    
+.radio-label {
+    color: white;
 }
 
-input[type=radio],input[type=checkbox]{
-    
+input {
     margin: 5px;
 }
 
-div{
+#survey-form>div {
+    width-left: auto;
+    width-right: auto;
+    display: block;
+    content-aling: right;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin: 5px;
+}
+
+div {
     margin: 10px;
-  
-    
-    
-
 }
 
-
-
-fieldset ,textarea {
+fieldset,
+textarea {
     border: 0;
-    display:inline;
+    display: inline;
     vertical-align: middle;
-   
 }
 
 label {
     color: #EBA51E;
-    display:inline-block;
-
-    
-  
-   
-
+    display: inline-block;
 }
-

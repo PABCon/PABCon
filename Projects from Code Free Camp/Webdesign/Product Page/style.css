@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 /* Navigation Bar settings */
 
 nav {
@@ -22,16 +23,24 @@ nav {
 #header-img {
     overflow: hidden;
     padding: 0;
-    width: 20vw;
+    width: 10vw;
 }
 
-.nav-item, .footer-item {
+.nav-item,
+.footer-item {
     display: inline-block;
     color: white;
     margin: 20px;
     text-emphasis: none;
     list-style: none;
-    
+}
+
+#nav-bar>div>a {
+    color: white;
+    font-size: 2.5vw;
+    text-decoration: inherit;
+    padding: 0px 20px;
+    height: 100%;
 }
 
 a {
@@ -40,9 +49,11 @@ a {
     text-decoration: inherit;
 }
 
+
 /* Body Settings */
-.pagewrapper{
-    position:relative;
+
+.pagewrapper {
+    position: relative;
 }
 
 h2 {
@@ -54,7 +65,8 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-#hero{
+
+#hero {
     margin-top: 70px;
     display: flex;
     flex-direction: column;
@@ -62,121 +74,109 @@ h2 {
     text-align: center;
     height: 200px;
     align-items: center;
-
 }
 
-#hero >h2 {
+#hero>h2 {
     margin-bottom: 20px;
     word-wrap: break-word;
 }
 
-#hero input[type=mail]{
-    max-width:400px;
+#hero input[type=mail] {
+    max-width: 400px;
     width: 100%;
     padding: 5px;
 }
 
-#hero input[type=submit]{
+#hero input[type=submit] {
     background-color: gold;
-    padding:10px;
+    padding: 10px;
     margin-top: 20px;
     font-weight: 900;
     font-size: 15px;
     width: 100%;
-    max-width: 200px;  
-    border-style: none; 
+    max-width: 200px;
+    border-style: none;
 }
 
-.container{
+.container {
     max-width: 10000px;
     width: 100%;
     margin: 0 auto;
-
-
 }
 
-section{display: flex;
+section {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
-    
 }
 
-.grid{
+.grid {
     display: flex;
     width: 50%;
     margin: 50px;
-    
-
-    
-
 }
-.icon, .guitar-desc{
-    
+
+.icon,
+.guitar-desc {
     margin: 0px 20px;
 }
 
-
-#video{
+#video {
     display: flex;
     justify-content: center;
-    margin: 200px;
-    
+    margin-top: 50px;
 }
 
-#video iframe{
+#video iframe {
     max-width: 600px;
-   width: 70vw;
+    width: 70vw;
 }
 
-.price{
+.price {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 75%;
-   
-    
 }
 
-
-.pricebox{
+.pricebox {
     margin: 40px;
-    border:solid 1px black;
+    border: solid 1px black;
     text-align: center;
     width: 60%
-   
-    
 }
 
-.guitar_name{
-    background-color:lightgray;
-    padding: 20px;  
-
+.guitar_name {
+    background-color: lightgray;
+    padding: 20px;
 }
-.guitar-desc{
+
+.guitar-desc {
     margin-bottom: 10px;
     padding: 20px;
 }
 
-#price input[type=submit]{
+#price input[type=submit] {
     background-color: gold;
-    padding:10px;
-    margin:20px;
+    padding: 10px;
+    margin: 20px;
     font-weight: 900;
     font-size: 15px;
-    text-align: center; 
-    max-width: 200px;  
-    border-style: none; 
+    text-align: center;
+    max-width: 200px;
+    border-style: none;
 }
 
 @media screen and (max-width: 1000px) {
     .price {
-      display: flex;
-      flex-direction: column;
-      width: 100%
+        display: flex;
+        flex-direction: column;
+        width: 100%
     }
-  }
+}
+
 
 /* Footer Settings */
 
@@ -193,11 +193,12 @@ footer {
     font-size: 1rem;
 }
 
-.footer-item{margin: 10px}
+.footer-item {
+    margin: 10px
+}
 
-
-input#submit:hover{
+input#submit:hover {
     background-color: maroon;
     color: white;
-    transition:  background-color, color 2s;
+    transition: background-color, color 2s;
 }

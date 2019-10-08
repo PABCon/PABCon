@@ -1,27 +1,21 @@
 *,
 body {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: "Gloria Hallelujah", cursive;
     text-align: center;
     margin: 0;
     padding: 0;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: white;
 }
 
 nav {
-    background-color: #003E35;
+    background-color: #003e35;
     position: fixed;
+    z-index: 1;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    height: 100%;
 }
 
 .logo {
@@ -29,7 +23,7 @@ ul {
     text-decoration: none;
 }
 
-ul>a {
+a {
     text-emphasis: none;
     text-decoration: none;
     cursor: pointer;
@@ -51,29 +45,32 @@ ul>a:hover {
 }
 
 li {
-    color: white
+    color: white;
 }
 
 footer {
-    background-color: #007D6C;
+    background-color: #007d6c;
 }
 
 section {
-    background-color: #007D6C;
+    background-color: #007d6c;
 }
 
-#welcome {
+#welcome-section {
     background-image: url("https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
-    width: 100%;
-    padding: 60px 0px 0px 0px;
+    height: 100vh;
+    display: block;
     text-align: center;
     color: black;
 }
 
-#welcome span {
+#welcome-section>h1 {
+    padding-top: 60px;
+}
+
+#welcome-section span {
     color: purple;
     font-size: 2rem;
 }
@@ -84,19 +81,20 @@ section {
 }
 
 #portfolio-hearder>h1 {
-    border-bottom: #68A098 5px solid;
-    color: #68A098;
+    border-bottom: #68a098 5px solid;
+    color: #68a098;
     margin: 0px 20%;
 }
 
-#portfolio {
+#projects {
     display: grid;
     background-color: white;
     grid-template-columns: 50% 50%;
 }
 
-#portfolio>div>p {
-    color: #68A098;
+#projects>div>a {
+    color: #68a098;
+    overflow: hidden;
 }
 
 iframe {
@@ -104,7 +102,7 @@ iframe {
     width: 80%;
 }
 
-#portfolio>div {
+#projects>div {
     height: 500px;
 }
 
@@ -113,9 +111,10 @@ iframe {
     color: purple;
 }
 
-#contact>div>p {
+#contact>div>a {
     font-size: 1rem;
     padding-bottom: 30px;
+    overflow: hidden;
 }
 
 #icons {
@@ -128,7 +127,7 @@ iframe {
 #icons>a {
     text-emphasis: none;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1rem;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -150,7 +149,7 @@ iframe {
 }
 
 footer>div {
-    background-color: #003E35;
+    background-color: #003e35;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -162,16 +161,63 @@ footer>div>p {
 
 #button {
     margin: 50px 0;
+    overflow: hidden;
 }
 
 button {
-    background-color: #68A098;
+    background-color: #68a098;
     border: none;
     padding: 10px;
 }
 
-button>a {
+button>a,
+p {
     text-emphasis: none;
     text-decoration: none;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+    * {
+        font-size: 3vw
+    }
+    .icon {
+        height: 20px;
+        width: 20px;
+    }
+    #icons a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        overflow: hidden;
+    }
+    #welcome-section {
+        height: 50vh;
+    }
+    #projects {
+        display: grid;
+        background-color: white;
+        grid-template-columns: 1fr;
+    }
+    footer>div>p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .icon {
+        height: 30px;
+        width: 30px;
+    }
+    #icons>a {
+        display: flex;
+        flex-direction: column;
+    }
+    #welcome-section {
+        height: 50vh;
+    }
+    footer>div>p {
+        font-size: 10px;
+    }
 }
