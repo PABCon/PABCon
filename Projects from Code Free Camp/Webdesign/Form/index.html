@@ -19,17 +19,20 @@
 
         <!-- Text input part -->
         <div id="textinput">
-            <label id="name-label" for="name">Name:</label>
-            <input id="name" name="name" required><br>
+            <div>
+                <label id="name-label" for="name">Name:</label>
+                <input id="name" name="name" placeholder="Please insert your name" required><br>
+            </div>
+            <div>
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Please insert your email" required><br>
+            </div>
 
+            <div>
 
-            <label id="email-label" for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-
-            <label for="pnumber">Phone Number:</label>
-            <input type="tel" id="pnumber" name="pnumber"><br>
-
+                <label id="number-label" for="number">Phone Number:</label>
+                <input type="number" id="number" name="pnumber" placeholder="Please insert your phone#" min="7" max="9"><br>
+            </div>
         </div>
         <!-- Radio Buttons -->
 
@@ -38,11 +41,20 @@
             <label for="background">Your Background</label>
             <fieldset>
 
-                <input type="radio" name="background" value="Entrepreneur" checked>Entrepreneur<br>
-                <input type="radio" name="background" value="Student">Student<br>
-                <input type="radio" name="background" value="Company Employee">Company Employee<br>
-                <input type="radio" name="background" value="Governamental Entity">Governamental Entity<br>
-                <input type="radio" name="background" value="Nonprofit Organization">Nonprofit Organization<br>
+                <label class="radio-label" for="Entrepreneur">Enterpreneur</label>
+                <input type="radio" name="background" value="Entrepreneur" id="Entrepreneur"><br>
+
+                <label class="radio-label" for="student">Student</label>
+                <input type="radio" name="background" value="Student" id="student"><br>
+
+                <label class="radio-label" for="Company Employee">Company Employee</label>
+                <input type="radio" name="background" value="Company Employee" id="Company Employee"><br>
+
+                <label class="radio-label" for="Governamental Entity">Governamental Entity</label>
+                <input type="radio" name="background" value="Governamental Entity" id="Governamental Entity"><br>
+
+                <label class="radio-label" for="Nonprofit Organization">Nonprofit Organization</label>
+                <input type="radio" name="background" value="Nonprofit Organization" id="Nonprofit Organization"><br>
         </div>
 
 
@@ -67,7 +79,7 @@
 
             <div>
                 <label for="number-label">Number of Webpages:</label>
-                <input type="number" id="number-label" name="pages" min="1" max="10" required>
+                <input type="number" name="pages" min="1" max="10" required>
 
             </div>
             <!-- Type of Webpages to design -->
@@ -76,12 +88,25 @@
                 <label for=type_pages>Type of Pages</label>
 
                 <fieldset>
-                    <input type="checkbox" name="type_pages" value="LandPage" checked>Landing Page<br>
-                    <input type="checkbox" name="type_pages" value="LandPage">Contacts<br>
-                    <input type="checkbox" name="type_pages" value="LandPage">Personal Page<br>
-                    <input type="checkbox" name="type_pages" value="LandPage">Product Page<br>
-                    <input type="checkbox" name="type_pages" value="LandPage">Catalog<br>
-                    <input type="checkbox" name="type_pages" value="LandPage">Others<br>
+
+                    <label class="radio-label" for="Landing Page">Landing Page</label>
+                    <input type="checkbox" name="type_pages" value="LandPage" id="Landing Page"><br>
+
+                    <label class="radio-label" for="Contacts">Contacts</label>
+                    <input type="checkbox" name="type_pages" value="LandPage" id="Contacts"><br>
+
+                    <label class="radio-label" for="Personal Page">Personal Page</label>
+                    <input type="checkbox" name="type_pages" value="LandPage" id="Personal Page"><br>
+
+                    <label class="radio-label" for="Product Page">Product Page</label>
+                    <input type="checkbox" name="type_pages" value="LandPage" id="Product Page"><br>
+
+                    <label class="radio-label" for="Catalog">Catalog</label>
+                    <input type="checkbox" name="type_pages" value="LandPage" id="Catalog"><br>
+
+                    <label class="radio-label" for="Others">Others</label>
+                    <input type="checkbox" name="type_pages" value="LandPage" id="Others"><br>
+
 
                 </fieldset>
 
@@ -90,13 +115,12 @@
                 <div>
 
                     <label for="freetext">Please describe your overall request:</label>
-                    <textarea id="freetext" form="survey-form" cols="25" rows="10"
-                        placeholder="Enter your requirements here" required></textarea>
+                    <textarea id="freetext" form="survey-form" cols="25" rows="10" placeholder="Enter your requirements here" required></textarea>
 
-                    
-                        <br><br><input id="submit" type="submit" name="submit">
+
+                    <br><br><input id="submit" type="submit" name="submit">
     </form>
-   
+
 </section>
 
 </html>

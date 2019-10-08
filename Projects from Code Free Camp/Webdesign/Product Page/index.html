@@ -17,18 +17,17 @@
     <div class="pagewrapper">
         <header id="header">
 
-            <nav>
+            <nav id="nav-bar">
                 <div class="nav-link">
-                    <a href="https://www.ibanez.com/eu/"><img src="https://www.ibanez.com/images/logo.png"
-                            alt="Ibanez Logo" id="header-img"></a>
+                    <a href="https://www.ibanez.com/eu/"><img src="https://www.ibanez.com/images/logo.png" alt="Ibanez Logo" id="header-img"></a>
                 </div>
 
-                <ul>
-                    <li class="nav-item"><a href="#header">Features</a></li>
-                    <li class="nav-item"><a href="#youtube">Video</a></li>
-                    <li class="nav-item"><a href="#price">Prices</a></li>
+                <div>
+                    <a class="nav-link" href=#features>Features</a>
+                    <a class="nav-link" href=#video>Video</a>
+                    <a class="nav-link" href=#price>Prices</a>
 
-                </ul>
+                </div>
             </nav>
 
         </header>
@@ -36,28 +35,25 @@
         <section id="hero">
 
             <h2>Ibanez Guitars</h2>
-            <form action="https://www.freecodecamp.com/email-submit">
-                <input type="mail" name="" id="mail" placeholder="Enter Your Email" required><br>
-                <input id="submit"  type="submit" value="Get Started"
-                    id="submit">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required><br>
+                <input id="submit" name="submit" type="submit" value="Get Started">
+
             </form>
 
         </section>
-
-       
         <!-- Feature DIV-->
         <div class="container">
 
             <section id="features">
                 <div class="grid">
                     <div class="icon">
-                        <img src="https://img.icons8.com/cotton/64/000000/saw.png"></a>
+                        <img src="https://img.icons8.com/cotton/64/000000/saw.png" alt="icon"></a>
                     </div>
 
                     <div class="description">
                         <h3>Quality Material</h3>
-                        <p>You can be sure that we build our products with the best materials and the most advanced
-                            technology processes!</p>
+                        <p>You can be sure that we build our products with the best materials and the most advanced technology processes!</p>
                     </div>
 
                 </div>
@@ -65,7 +61,7 @@
 
                 <div class="grid">
                     <div class="icon">
-                        <img src="https://img.icons8.com/cotton/64/000000/cardboard-box.png"></a>
+                        <img alt="icon" src="https://img.icons8.com/cotton/64/000000/cardboard-box.png"></a>
                     </div>
                     <div class="descrition">
                         <h3>Delivery</h3>
@@ -77,7 +73,7 @@
 
                 <div class="grid">
                     <div class="icon">
-                        <img src="https://img.icons8.com/dusk/64/000000/safe.png"></a>
+                        <img src="https://img.icons8.com/dusk/64/000000/safe.png" alt="icon"></a>
                     </div>
                     <div class="description">
                         <h3>Safety</h3>
@@ -86,12 +82,11 @@
                 </div>
 
             </section>
-            <section id="video">
+
+            <section id="video-section">
                 <!-- Video DIV-->
                 <div class="video">
-                    <iframe id="youtube"width="560" height="315" src="https://www.youtube.com/embed/LcDhdxmLNdk" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/LcDhdxmLNdk" allowfullscreen></iframe>
 
                 </div>
             </section>
@@ -108,7 +103,7 @@
                             <p>This is good guitar</p>
                         </div>
                         <div class="select-button">
-                            <input id="submit" type="submit" value="Select">
+                            <input class="submit" type="submit" value="Select">
                         </div>
 
 
@@ -122,7 +117,7 @@
                             <p>This is a very good guitar</p>
                         </div>
                         <div class="select-button">
-                            <input id="submit" type="submit" value="Select">
+                            <input class="submit" type="submit" value="Select">
                         </div>
 
 
@@ -137,7 +132,7 @@
                             <p>This is a fantastic guitar</p>
                         </div>
                         <div class="select-button">
-                            <input id="submit" type="submit" value="Select">
+                            <input class="submit" type="submit" value="Select">
                         </div>
 
 

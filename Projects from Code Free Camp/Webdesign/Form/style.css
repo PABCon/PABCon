@@ -19,7 +19,6 @@ form {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
 }
 
 .radio-label {
@@ -31,10 +30,7 @@ input {
 }
 
 #survey-form>div {
-    width-left: auto;
-    width-right: auto;
     display: block;
-    content-aling: right;
 }
 
 input[type=radio],
