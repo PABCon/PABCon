@@ -39,15 +39,6 @@ a {
     transition-property: transform;
 }
 
-ul>a:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-li {
-    color: white;
-}
-
 footer {
     background-color: #007d6c;
 }
@@ -68,6 +59,8 @@ section {
 
 #welcome-section>h1 {
     padding-top: 60px;
+    color: #68a098;
+    font-weight: 900;
 }
 
 #welcome-section span {

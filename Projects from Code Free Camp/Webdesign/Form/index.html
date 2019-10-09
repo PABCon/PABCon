@@ -55,11 +55,11 @@
 
                 <label class="radio-label" for="Nonprofit Organization">Nonprofit Organization</label>
                 <input type="radio" name="background" value="Nonprofit Organization" id="Nonprofit Organization"><br>
+
+            </fieldset>
         </div>
 
-
-        </fieldset>
-        <!-- Dropdown section -->
+        <!-- Dropdown part -->
 
         <div>
             <label for="dropdown"> Type of Website:</label>
@@ -75,50 +75,52 @@
 
             </select>
 
-            <!-- Webpages required -->
+        </div>
+
+        <!-- Webpages required -->
+
+        <div>
+            <label for="number-label">Number of Webpages:</label>
+            <input type="number" name="pages" min="1" max="10" required>
+
+        </div>
+        <!-- Type of Webpages to design -->
+
+        <div id="type_pages">
+            <label for=type_pages>Type of Pages</label>
+
+            <fieldset>
+
+                <label class="radio-label" for="Landing Page">Landing Page</label>
+                <input type="checkbox" name="type_pages" value="LandPage" id="Landing Page"><br>
+
+                <label class="radio-label" for="Contacts">Contacts</label>
+                <input type="checkbox" name="type_pages" value="LandPage" id="Contacts"><br>
+
+                <label class="radio-label" for="Personal Page">Personal Page</label>
+                <input type="checkbox" name="type_pages" value="LandPage" id="Personal Page"><br>
+
+                <label class="radio-label" for="Product Page">Product Page</label>
+                <input type="checkbox" name="type_pages" value="LandPage" id="Product Page"><br>
+
+                <label class="radio-label" for="Catalog">Catalog</label>
+                <input type="checkbox" name="type_pages" value="LandPage" id="Catalog"><br>
+
+                <label class="radio-label" for="Others">Others</label>
+                <input type="checkbox" name="type_pages" value="LandPage" id="Others"><br>
+
+            </fieldset>
+
+            <!-- free text box -->
 
             <div>
-                <label for="number-label">Number of Webpages:</label>
-                <input type="number" name="pages" min="1" max="10" required>
 
+                <label for="freetext">Please describe your overall request:</label>
+                <textarea id="freetext" form="survey-form" cols="25" rows="10" placeholder="Enter your requirements here" required></textarea>
+
+                <br><br><input id="submit" type="submit" name="submit">
             </div>
-            <!-- Type of Webpages to design -->
 
-            <div id="type_pages">
-                <label for=type_pages>Type of Pages</label>
-
-                <fieldset>
-
-                    <label class="radio-label" for="Landing Page">Landing Page</label>
-                    <input type="checkbox" name="type_pages" value="LandPage" id="Landing Page"><br>
-
-                    <label class="radio-label" for="Contacts">Contacts</label>
-                    <input type="checkbox" name="type_pages" value="LandPage" id="Contacts"><br>
-
-                    <label class="radio-label" for="Personal Page">Personal Page</label>
-                    <input type="checkbox" name="type_pages" value="LandPage" id="Personal Page"><br>
-
-                    <label class="radio-label" for="Product Page">Product Page</label>
-                    <input type="checkbox" name="type_pages" value="LandPage" id="Product Page"><br>
-
-                    <label class="radio-label" for="Catalog">Catalog</label>
-                    <input type="checkbox" name="type_pages" value="LandPage" id="Catalog"><br>
-
-                    <label class="radio-label" for="Others">Others</label>
-                    <input type="checkbox" name="type_pages" value="LandPage" id="Others"><br>
-
-
-                </fieldset>
-
-                <!-- free text box -->
-
-                <div>
-
-                    <label for="freetext">Please describe your overall request:</label>
-                    <textarea id="freetext" form="survey-form" cols="25" rows="10" placeholder="Enter your requirements here" required></textarea>
-
-
-                    <br><br><input id="submit" type="submit" name="submit">
     </form>
 
 </section>

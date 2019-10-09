@@ -14,8 +14,7 @@ header {
     width: 100%;
 }
 
-code,
-xmp {
+code {
     background: darkcyan;
     color: white;
 }
