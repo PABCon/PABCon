@@ -1,0 +1,16 @@
+
+
+.nav-bar-img{
+width: 36px;
+    
+height:36px;
+
+}
+
+.dot {
+  height: 36px;
+  width: 36px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
