@@ -38,7 +38,7 @@
         text-decoration-thickness: auto;
     }
     
-    .nav-bar-img {
+    .Squareicon {
         width: 25px;
         height: 25px;
     }
@@ -47,7 +47,7 @@
         height: 25px;
         width: 25px;
         background-color: #bbb;
-        border-radius: 50%;
+        border-radius: 20%;
         display: inline-block;
     }
     
