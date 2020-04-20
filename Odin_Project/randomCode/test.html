@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .foo {
+            background-color: red;
+            padding: 10px;
+        }
+        
+        #bar {
+            border: 10px solid #000;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+    <script>
+        var div = document.querySelector('div');
+
+        //set
+        div.setAttribute('id', 'bar');
+        div.classList.add('foo');
+
+        /*remove
+        div.removeAttribute('id');
+        div.classList.remove('foo');
+        */
+    </script>
+</body>
+
+</html>

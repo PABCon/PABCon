@@ -1,0 +1,102 @@
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Pacifico', cursive;
+    height: 100%;
+    width: auto;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#title {
+    text-align: center;
+    font-size: 35px;
+    margin: 100px 0px 100px 0px;
+    /* text-shadow: 6px 6px aqua;
+    text-shadow: 4px 4px 10px red; */
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+
+.board-button>button {
+    height: 200px;
+    width: 400px;
+    border: solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    outline: none;
+}
+
+.board-button>button:hover {
+    box-shadow: 0px 0px 45px 0px aqua;
+}
+
+.rock {
+    background: no-repeat;
+    background-image: url("img/rock-576684_640 (1).png");
+    background-size: 300px 150px;
+    background-position: center;
+}
+
+.paper {
+    background: no-repeat;
+    background-image: url("img/origami-294027_640.png");
+    background-size: 300px 150px;
+    background-position: center;
+}
+
+.scissor {
+    background: no-repeat;
+    background-image: url("img/scissors-28698_1280.png");
+    background-size: 300px 150px;
+    background-position: center;
+}
+
+#results {
+    display: flex;
+    justify-content: space-around;
+}
+
+#results>div {
+    border: solid black;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    text-emphasis: none;
+    text-decoration: none;
+    margin: 0px 0px 50px 0px;
+}
+
+.reset {
+    font-family: inherit;
+    border-radius: 4px;
+    background: no-repeat;
+    border: 1px solid black;
+    outline: none;
+}
+
+.reset:hover {
+    box-shadow: 0px 0px 45px 0px black;
+}
+
+#count {
+    text-align: center;
+    padding-right: 700px;
+    font-size: 20px;
+}
