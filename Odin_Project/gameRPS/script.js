@@ -2,7 +2,6 @@ let computerPlay = function() {
 
 
     let value = Math.round(Math.floor(Math.random() * (3 - 1 + 1)) + 1);
-    console.log(value);
     switch (value) {
 
         case 1:
@@ -22,16 +21,9 @@ let computerPlay = function() {
 }
 
 
-let playRound = function() {
-
-    let playerValue = prompt("Choose Paper, Scissor or Rock");
-
-    playerValue = playerValue.toLowerCase();
+let playRound = function(playerValue) {
 
     computerValue = computerPlay();
-
-
-
     switch (playerValue) {
 
         case "rock":
@@ -39,56 +31,94 @@ let playRound = function() {
             switch (computerValue) {
 
                 case "rock":
-                    alert(`${playerValue} and ${computerValue}, no one wins! :/ `);
-                    return 0;
+                    update(0);
+                    break;
                 case "scissor":
-                    alert(`${playerValue} and ${computerValue}, player wins! :) `);
-                    return 1;
+                    update(1);
+                    break;
                 case "paper":
-                    alert(`${playerValue} and ${computerValue}, computer wins! :( `);
-                    return -1;
+                    update(-1);
 
 
             }
-
+            break;
         case "scissor":
 
             switch (computerValue) {
 
                 case "rock":
-                    alert(`${playerValue} and ${computerValue}, computer wins! :( `);
-                    return -1;
+                    update(-1);
+                    break;
                 case "scissor":
 
-                    alert(`${playerValue} and ${computerValue}, no one wins! :/ `);
-                    return 0;
+                    update(0);
+                    break;
                 case "paper":
 
-                    alert(`${playerValue} and ${computerValue}, player wins! :)`)
-                    return 1;
-
+                    update(1);
+                    break;
 
             }
+            break;
         case "paper":
 
             switch (computerValue) {
 
                 case "rock":
-                    alert(`${playerValue} and ${computerValue}, player wins! :) `);
-                    return 1;
+                    update(1);
+                    break;
 
                 case "scissor":
-                    alert(`${playerValue} and ${computerValue}, computer wins! :( `);
-                    return -1;
+                    update(-1);
+                    break;
 
                 case "paper":
 
-                    alert(`${playerValue} and ${computerValue}, no one wins! :/ `);
-                    return 0;
+                    update(0);
+                    break
 
 
             }
 
+    }
+
+}
+
+
+let update = function(a) {
+
+
+
+    switch (a) {
+
+        case 1:
+            c += 1;
+            resultTable.innerHTML = `You win! A point for you! `;
+            playerIndex.innerHTML += '|';
+            playerCount.innerHTML = c;
+            break;
+
+        case 0:
+
+            resultTable.innerHTML = `It's a draw!\n More luck next time! `;
+            break;
+
+        case -1:
+            b += 1;
+            resultTable.innerHTML = `You lose! A point for Computer! `;
+            computerIndex.innerHTML += '|';
+            computerCount.innerHTML = b;
+            break;
+
+        case 2:
+            b = 0;
+            c = 0;
+            resultTable.innerHTML = '';
+            computerIndex.innerHTML = '';
+            playerIndex.innerHTML = '';
+            computerCount.innerHTML = 0;
+            playerCount.innerHTML = 0;
+
 
     }
 
@@ -96,58 +126,25 @@ let playRound = function() {
 }
 
 
-let gameRPS = function() {
+const resultTable = document.querySelector('.result-box')
+const playerIndex = document.querySelector('.resultPlayer')
+const computerIndex = document.querySelector('.resultComputer')
+const playerCount = document.querySelector('.playerCount')
+const computerCount = document.querySelector('.computerCount')
 
-    let num = prompt("How many games you want to do? (only pass number)")
+let c = 0;
+let b = 0;
 
-    let playerRes = 0;
-    let computerRes = 0;
+const buttons = document.querySelectorAll("button");
 
-    for (let i = 0; i < num; i++) {
-
-        let result = playRound();
-        console.log(i, result)
-
-        if (result == 1) {
-            playerRes += 1;
-        } else if (result == 0) {;
-        } else if (result == -1) {
-            computerRes += 1;
-
-        }
-    }
-
-    console.log(`player has ${playerRes} and computer has ${computerRes}`);
-    if (playerRes > computerRes) {
-        alert(`You Win!!! You got ${playerRes} and computer had ${computerRes}!`)
-    } else if (playerRes == computerRes) {
-        alert(`It's a draw, too bad. Play again`)
-    } else {
-        alert(`Computer Wins! Best luck next time`)
-    }
+buttons.forEach((button) => {
 
 
-}
+    button.addEventListener('click', (button) => {
 
 
+        if (button.target.className == "paper") { playRound("paper") } else if (button.target.className == "rock") { playRound("rock") } else if (button.target.className == "scissor") { playRound("scissor") } else if (button.target.className == 'reset') { update(2) };
 
-let pro = function(num) {
 
-    let rock = 0;
-    let scissor = 0;
-    let paper = 0;
-
-    for (let i = 0; i < num; i++) {
-
-        let value = computerPlay();
-
-        if (value == 'rock') {
-            rock += 1
-        } else if (value == 'scissor') {
-            scissor += 1
-        } else {
-            paper += 1
-        }
-    }
-    console.log(`rock ${rock} scissor ${scissor} paper ${paper}`)
-}
+    });
+});

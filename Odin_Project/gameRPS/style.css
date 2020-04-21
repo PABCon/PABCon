@@ -64,6 +64,7 @@ body {
 #results {
     display: flex;
     justify-content: space-around;
+    height: auto;
 }
 
 #results>div {
@@ -89,6 +90,7 @@ body {
     background: no-repeat;
     border: 1px solid black;
     outline: none;
+    font-size: 20px;
 }
 
 .reset:hover {
@@ -97,6 +99,22 @@ body {
 
 #count {
     text-align: center;
-    padding-right: 700px;
-    font-size: 20px;
+    position: sticky;
+}
+
+#count.div {
+    position: fixed;
+    width: 100px;
+}
+
+p,
+span {
+    font-size: 25px;
+    overflow: hidden;
+    position: sticky;
+    white-space: normal;
+}
+
+p>span {
+    transform: scale();
 }
