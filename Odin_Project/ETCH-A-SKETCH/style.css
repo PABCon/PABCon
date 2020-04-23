@@ -1,0 +1,29 @@
+:root {
+    --rowNum: 20;
+    --colNum: 20;
+    --bgColor: 'rgb(0, 0, 0)':
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container {
+    display: grid;
+    height: 600px;
+    width: 600px;
+    grid-template-rows: repeat(var(--rowNum));
+    grid-template-columns: repeat(var(--colNum), auto);
+}
+
+#container>div {
+    background-color: white;
+    border: 0.5px solid black;
+}
+
+#container>div:hover {
+    background-color: var(--bgColor);
+    color: gray;
+}
