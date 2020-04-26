@@ -1,13 +1,37 @@
 :root {
     --rowNum: 20;
     --colNum: 20;
-    --bgColor: 'rgb(0, 0, 0)':
+    --bgColor: 'rgb(0, 0, 0)';
+    --opa: 0.1;
 }
 
-html {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#title {
+    font-size: 50px;
+    color: var(--bgColor);
+    padding: 0 px;
+    margin: 0px;
+    height: unset;
+}
+
+#options,
+#dropdown,
+#input,
+#buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
 }
 
 #container {
@@ -23,7 +47,13 @@ html {
     border: 0.5px solid black;
 }
 
-#container>div:hover {
+
+/* #container>div:hover {
     background-color: var(--bgColor);
     color: gray;
+} */
+
+#container>.itemhovered {
+    opacity: 1;
+    background-color: var(--bgColor);
 }

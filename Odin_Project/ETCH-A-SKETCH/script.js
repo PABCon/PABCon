@@ -3,11 +3,13 @@
 /* HTML Variables */
 
 const bodyElem = document.querySelector("#container");
-const squares = document.getElementsByClassName('item');
+const square = document.getElementsByClassName("item")
 const color = document.querySelector('#color');
 const numCol = document.querySelector("#columns");
 const reset = document.querySelector(".reset");
 
+
+console.log(reset)
 
 /* CSS variables */
 
@@ -37,28 +39,21 @@ let makeGrid = function(n) {
     }
 }
 
+
+
+
+
 let randomizeColor = function() {
     let randColor = Math.round(Math.floor(Math.random() * (255 - 1 + 1)) + 1);
     return randColor;
 }
 
 
+
 /* Event listeners */
 
 
 /* still need to define reset button */
-
-numCol.addEventListener('change', (e) => {
-
-
-    if (e.target.value < 5 || e.target.value > 200) {
-        alert("Choose a number between 10 and 200 ")
-
-        numCol.value = 10;
-
-    } else { makeGrid(e.target.value) }
-
-})
 
 color.addEventListener('change', (e) => {
 
@@ -88,6 +83,9 @@ color.addEventListener('change', (e) => {
 
             document.documentElement.style.setProperty('--bgColor', `rgb(${randomizeColor()}, ${randomizeColor()}, ${randomizeColor()})`);
             break;
+
+
+
     }
 
 
@@ -128,10 +126,37 @@ color.addEventListener('click', (e) => {
 
 });
 
-makeGrid(5);
+numCol.addEventListener('change', (e) => {
 
-/* Summary */
 
-/*  - Still missing changing colors when it hovers the squares and reset button 
-    - Styling the final page
-*/
+    if (e.target.value < 5 || e.target.value > 200) {
+        alert("Choose a number between 10 and 200 ")
+
+        numCol.value = 10;
+        makeGrid(10)
+    } else { makeGrid(e.target.value) }
+
+})
+
+
+
+bodyElem.addEventListener('mouseover', (e) => {
+
+
+    e.relatedTarget.className = 'itemhovered'
+    document.documentElement.style.setProperty('--bgColor', color.target.value);
+
+
+    document.documentElement.style.setProperty('--opa', 1)
+
+
+})
+
+reset.addEventListener('click', (e) => {
+
+
+    makeGrid(numCol.value);
+
+});
+
+makeGrid(10);
