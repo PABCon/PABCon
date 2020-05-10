@@ -1,0 +1,42 @@
+        html,
+        body {
+            margin: 0px;
+            height: auto;
+            width: 100%;
+        }
+        
+        #calculator {
+            display: grid;
+            width: 25%;
+            height: 300px;
+            grid-gap: 10px;
+            grid-template-areas: "head head head head" ". . . . " " . . . . " " . . . ." ". . . ." "zr zr zr .";
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            border: solid black;
+            justify-items: center;
+            padding: 10px;
+        }
+        
+        #calculator>.result {
+            border: solid black 0.5px;
+            grid-area: head;
+            width: 90%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            font-size: 4vh;
+        }
+        
+        button {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        
+        #calculator>.zero {
+            grid-area: zr;
+            grid-column: 0 / span 3;
+            width: 100%;
+            height: 100%;
+        }
