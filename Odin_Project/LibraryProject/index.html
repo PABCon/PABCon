@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Library Project</h1>
+
+    <!-- Form -->
+    <div id="form">
+
+        <form class="form">
+            <label for="title">Book Title</label>
+            <input name="title" id="title" type="text">
+
+            <label for="author">Author Name</label>
+            <input type="text" id="author" name="author">
+
+            <label for="pages">Number of Pages</label>
+            <input type="number" id="pages" name="pages">
+
+            <label for="read">Did you read this book?</label>
+            <input type="radio" id="read_no" name="read" value="No" checked>
+            <label for="read_no">No</label>
+            <input type="radio" id="read_yes" name="read" value="Yes">
+            <label for="read_yes">Yes</label>
+
+            <input type="submit" id="submit_button">
+        </form>
+
+
+    </div>
+
+    <!-- Table -->
+    <div id="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Book Author</th>
+                    <th>Number of Pages</th>
+                    <th>Read?</th>
+                </tr>
+            </thead>
+
+            <tbody class="tablebody"></tbody>
+        </table>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
