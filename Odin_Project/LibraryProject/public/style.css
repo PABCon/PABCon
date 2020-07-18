@@ -1,0 +1,80 @@
+    * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        background-color: dimgray;
+        color: white;
+    }
+    
+    h1 {
+        font-size: 4rem;
+        text-shadow: black 3px 4px;
+    }
+    
+    #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form {
+        margin: 2rem;
+    }
+    
+    input {
+        margin: 0px 10px;
+        border: white solid 1px;
+        text-decoration: none;
+        text-transform: none;
+        border-radius: 1rem;
+        background-color: goldenrod;
+        color: white;
+        outline-width: 0;
+    }
+    
+    label {
+        font-weight: 700;
+    }
+    
+    .submit {
+        text-align: center;
+    }
+    
+    #table {
+        margin-top: 2rem;
+        width: 90%;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    thead tr,
+    thead th {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: goldenrod;
+        border-bottom: solid white 4px;
+    }
+    
+    tbody tr {
+        border-bottom: white solid 1px;
+        margin: 1r;
+    }
+    
+    td {
+        padding: 10px;
+    }
+    
+    tr button {
+        background-image: url(img/icons8-cross-mark-48.png);
+        background-size: cover;
+        border: none;
+        border-radius: 50%;
+        height: 1rem;
+        width: 1rem;
+    }

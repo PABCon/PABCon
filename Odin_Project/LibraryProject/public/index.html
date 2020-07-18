@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Library Project</h1>
+
+        <!-- Form -->
+        <div>
+
+            <form id="form">
+                <label for="title">Book Title</label>
+                <input name="title" id="title" type="text" required>
+
+                <label for="author">Author Name</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="pages">Number of Pages</label>
+                <input type="number" min="0" id="pages" name="pages" required>
+
+                <label for="read">Did you read this book?</label>
+                <input type="radio" id="read_no" name="read" value="No" checked>
+                <label for="read_no">No</label>
+                <input type="radio" id="read_yes" name="read" value="Yes">
+                <label for="read_yes">Yes</label>
+
+
+            </form>
+
+            <div class="submit">
+                <input type="submit" id="submit_button">
+            </div>
+
+
+        </div>
+
+        <!-- Table -->
+        <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Book Author</th>
+                        <th>Number of Pages</th>
+                        <th>Read?</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tablebody"></tbody>
+            </table>
+        </div>
+
+    </div>
+    <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Add the entire Firebase JavaScript SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="index.js"></script>
+
+
+
+
+</body>
+
+</html>
