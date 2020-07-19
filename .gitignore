@@ -2,4 +2,3 @@
 /Odin_Project/website/*
 /Odin_Project/DrumKit/*
 .gitignore
-node/modules
