@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script src="mustache.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>TIC TAC TOE</h1>
+
+    <div id="form">
+        <label for="name">Player Name</label>
+        <input type="text" name="name" id="name">
+        <button id="startButton">Start</button>
+        <button type="button" id="resetButton">Reset</button>
+    </div>
+
+
+
+    <div id="gamebox">
+        <div class="field"></div>
+        <div class="field"></div>
+        <div class="field"></div>
+        <div class="field"></div>
+        <div class="field"></div>
+        <div class="field"></div>
+        <div class="field"></div>
+        <div class="field"></div>
+        <div class="field"></div>
+    </div>
+    <div class="playersList"></div>
+    <ul>
+
+        <script id="template" type="text/template">
+            {{#playerList}}
+
+            <h3>{{.}}</h3>
+            <span></span> {{/playerList}}
+        </script>
+    </ul>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

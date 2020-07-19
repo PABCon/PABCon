@@ -1,0 +1,10 @@
+#gamebox {
+    display: grid;
+    width: 50rem;
+    height: 50rem;
+    grid-template-columns: auto auto auto;
+}
+
+.field {
+    border: 1px black solid;
+}
